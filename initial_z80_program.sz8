@@ -1,0 +1,23 @@
+	di	;0
+	xor a,a	;1
+	ld bc,$3FD7	;2
+	ld de,41	;5
+	ld hl,40	;8
+	ld (hl),a	;B
+	ldir	;C
+	ld sp,hl	;E
+	ld i,a	;F
+	pop ix	;11
+	pop iy	;13
+	pop af	;15
+	pop bc	;16
+	pop de	;17
+	pop hl	;18
+	ex af,af'	;19
+	exx	;1A
+	pop af	;1B
+	pop de	;1C
+	pop hl	;1D
+	ld sp,hl	;1E
+loop:
+	jr loop	;1F

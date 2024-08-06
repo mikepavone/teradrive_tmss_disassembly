@@ -1,0 +1,16 @@
+
+	di	;0
+	ld hl,$6000	;1
+	ld bc,$FF00	;4
+	ld (hl),c	;7
+	ld (hl),c	;8
+	ld (hl),c	;9
+	ld (hl),c	;A
+	ld (hl),c	;B
+	ld (hl),b	;C
+	ld (hl),b	;D
+	ld (hl),c	;E
+	ld (hl),b	;F
+loop:
+	ld a,($8000)	;10
+	jr loop	;13
