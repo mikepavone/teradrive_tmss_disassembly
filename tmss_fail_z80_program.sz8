@@ -14,3 +14,4 @@
 loop:
 	ld a,($8000)	;10
 	jr loop	;13
+	halt

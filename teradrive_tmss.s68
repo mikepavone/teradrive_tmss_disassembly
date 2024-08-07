@@ -595,8 +595,6 @@ ADR_704:
 	bra.b ADR_704	;70A
 tmss_fail_z80_prog:
 	incbin "tmss_fail_z80_program.bin"
-
-	dc.b $76 ; unclear what this is for, might just be some odd padding
 	
 ADR_722:
 	lea.l ADR_728(pc), a6	;722
